@@ -21,16 +21,19 @@
     />
 
     <link rel="stylesheet" href="./styles.css/style.css" />
-
+<link rel="stylesheet" href="./styles.css/normalize.css">
     <title>html1</title>
   </head>
   <body>
+    
     <header class="header">
-      <nav class="header-nav">
+      <div class="conteiner">
+
         <a class="haeder-logo logo" lang="en" href=""
-          ><span class="header_logo_text-web">Web</span
-          ><span class="header_logo_text-studio">Studio</span>
-        </a>
+            ><span class="header_logo_text-web">Web</span
+            ><span class="header_logo_text-studio">Studio</span>
+          </a>
+      <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-list-item">
             <a class="header-nav-list-item-link" href="index.html">Студия</a>
@@ -45,32 +48,39 @@
           </li>
         </ul>
       </nav>
-      <ul class="header-list_contacts">
-        <li class="header-list_contacts-item">
-          <a
-            class="header-list_contacts-item-link"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-list_contacts-item">
-          <a class="header-list_contacts-item-link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      
+      <div class="header-contacts">
+        <ul class="header-list_contacts">
+          <li class="header-list_contacts-item">
+            <a
+              class="header-list_contacts-item-link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-list_contacts-item">
+            <a class="header-list_contacts-item-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+      </div>
     </header>
 
     <main class="main">
       <section class="main-section_effect_bussines">
+        <div class="conteiner">
         <h1 class="main-section_effect_bussines-title">
           Эффективные решения для вашего бизнеса
         </h1>
         <button class="main-section_effect_bussines-button" type="button">
           Заказать услугу
         </button>
+        </div>
       </section>
       <section class="main_section">
+        <div class="conteiner">
         <ul class="main_section-list">
           <li class="main_section-item">
             <h3 class="main_section-title">Внимание к деталям</h3>
@@ -101,8 +111,10 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="products">
+        <div class="conteiner">
         <h2 class="products-title">Чем мы занимаемся</h2>
         <ul class="products-list">
           <li class="products-item">
@@ -130,9 +142,11 @@
             />
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="command">
+        <div class="conteiner">
         <h2 class="command-title_section">Наша команда</h2>
         <ul class="command-list">
           <li class="command-item">
@@ -177,9 +191,11 @@
           </li>
         </ul>
       </section>
+      </div>
     </main>
 
     <footer class="footer">
+      <div class="conteiner">
       <a class="footer-logo logo" lang="en" href="">
         <span class="footer_logo_text-web">Web</span
         ><span class="footer_logo_text-studio">Studio</span></a
@@ -207,6 +223,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
