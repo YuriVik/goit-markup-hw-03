@@ -92,6 +92,7 @@ h6 {
 :root {
   --bg-color-dark: #2f303a;
   --bg-color-white: #ffffff;
+  --bg-color-white_two: #f5f4fa;
 }
 /*index-html-header*/
 * {
@@ -99,7 +100,7 @@ h6 {
   text-decoration: none;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto";
   background-color: var(--bg-color-white);
 }
 
@@ -116,12 +117,11 @@ body {
 }
 
 .header {
+  padding: 24px 0;
   background-color: var(--bg-color-white);
-  padding-top: 24x;
-}
-.header .conteiner {
   border-bottom: 1px solid #ececec;
 }
+
 .haeder-logo {
   margin-right: 93px;
 }
@@ -214,6 +214,7 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--color-main_title);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -297,21 +298,29 @@ body {
 .products-item-img {
 }
 .command {
+  background-color: var(--bg-color-white_two);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .command-title_section {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  font-style: normal;
+  font-weight: 700;
 }
 .command-list {
   display: flex;
 }
+
 .command-item {
+  background-color: var(--bg-color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .command-item:not(:last-child) {
   margin-right: 30px;
@@ -321,19 +330,24 @@ body {
 .command-img {
   margin-bottom: 30px;
 }
+.command-title_text {
+}
 .command-title {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.18;
-  text-align: center;
+  font-size: 16px;
+
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
 .command-text {
+  text-align: center;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
+
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -344,15 +358,16 @@ body {
   background-color: var(--bg-color-dark);
 }
 .footer-logo {
-  margin-bottom: 20px;
 }
 .footer-adress {
+  margin-top: 20px;
 }
 .footer-adress-list {
 }
 .footer-adress-item {
   margin-bottom: 9px;
 }
+
 .footer-adress-link {
   margin-bottom: 9px;
   font-size: 14px;
@@ -361,23 +376,31 @@ body {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
+
 .footer-adress-link:hover {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-main_title);
 }
-
+.footer-adress-first_item {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-main_title);
+  font-style: normal;
+}
 /*portfolio - main*/
 .main_portfolio {
 }
-.portfolio-section_buttons {
-  padding-top: 100px;
-  margin-bottom: 56px;
+.portfolio-section {
+  padding: 94px 0;
 }
 .portfolio-section_buttons-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-section_buttons-item:not(:last-child) {
   margin-right: 8px;
@@ -395,8 +418,6 @@ body {
   left: 495px;
   top: 174px;
   background: #f5f4fa;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 6px 22px;
 }
@@ -437,10 +458,11 @@ body {
 .section_images-img {
 }
 .images_text {
+  padding: 20px 24px;
+
   border: 1px solid #eeeeee;
 }
 .section_images-title {
-  margin-left: 24px;
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -449,8 +471,6 @@ body {
   color: var(--title-color);
 }
 .section_images-text {
-  margin-left: 24px;
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
