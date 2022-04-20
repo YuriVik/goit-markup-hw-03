@@ -254,7 +254,8 @@ body {
 .main_section-list {
   display: flex;
 }
-.main_section-item {
+.main_section-item:not(:last-child) {
+  margin-right: 30px;
 }
 .main_section-title {
   margin-bottom: 10px;
@@ -328,9 +329,9 @@ body {
 .command-list-img {
 }
 .command-img {
-  margin-bottom: 30px;
 }
 .command-title_text {
+  padding: 30px 0;
 }
 .command-title {
   text-align: center;
@@ -344,7 +345,7 @@ body {
 }
 .command-text {
   text-align: center;
-  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.18;
 
